@@ -1,147 +1,158 @@
 /* General Reset */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 /* Body Styling */
 body {
-    background: lightblue;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
+  background: lightblue;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 /* Flex Container */
 .flex-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
 }
 
 /* Title */
 .title h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    color: #333;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* Mode Display */
 .mode {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    background: green;
-    color: #fff;
-    font-size: 18px;
-    margin-bottom: 1rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  background: green;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 1rem;
 }
 
 /* Button Styling */
 .buttons {
-    display: flex;
-    gap: 0.5rem;
-    margin: 1rem 0;
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
 }
 
 .buttons button {
-    font-size: 1.15rem;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    border: 2px solid black;
-    cursor: pointer;
-    transition: transform 0.2s, background-color 0.3s;
+  font-size: 1.15rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
 }
 
 .buttons button:first-child {
-    background: #000;
-    color: #fff;
+  background: #000;
+  color: #fff;
 }
 
 .buttons button:nth-child(2) {
-    background: gray;
-    color: #fff;
+  background: gray;
+  color: #fff;
 }
 
 .buttons button:nth-child(3) {
-    background: linear-gradient(90deg, red, green, blue);
-    color: #fff;
+  background: linear-gradient(90deg, red, green, blue);
+  color: #fff;
 }
 
 .buttons button:nth-child(4),
 .buttons button:last-child {
-    background: #fff;
-    color: #000;
+  background: #fff;
+  color: #000;
 }
 
 .buttons button:hover {
-    transform: translateY(-3px);
-    background-color: #444; /* Darkened hover effect */
-    color: #fff;
+  transform: translateY(-3px);
+  background-color: #444; /* Darkened hover effect */
+  color: #fff;
 }
 
 /* Board Styling */
 .board {
-    display: grid;
-    width: 90%; /* Dynamic width */
-    aspect-ratio: 1 / 1; /* Makes the board square */
-    border: 3px solid #000;
-    background-color: #f9f9f9;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-    max-width: 500px;
-    margin: 0 auto;
+  display: grid;
+  width: 90%; /* Dynamic width */
+  aspect-ratio: 1 / 1; /* Makes the board square */
+  border: 3px solid #000;
+  background-color: #f9f9f9;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 /* Input Section Styling */
 .input {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
 
 .input input {
-    width: 80px;
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    text-align: center;
-    outline: none;
-    transition: border-color 0.3s ease;
+  width: 80px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.3s ease;
 }
 
 .input input:focus {
-    border-color: #007bff;
+  border-color: #007bff;
 }
 
 .input button {
-    padding: 8px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s;
+  padding: 8px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
 }
 
 .input button:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
+  background-color: #0056b3;
+  transform: translateY(-2px);
 }
 
 /* Box Styling for Grid Items */
 .box {
-    border: 1px solid #ccc;
-    background-color: white;
-    transition: background-color 0.2s;
+  border: 1px solid #ccc;
+  background-color: white;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.github-link {
+  margin: 1rem 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.github-link:hover {
+  transform: scaleX(1.1);
 }
